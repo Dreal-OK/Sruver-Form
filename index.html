@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Survey Form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="container-content">
+      <h1 id="title">Surver Form</h1>
+      <p id="description">Thank you for taking the time; this will only take a minute</p>
+  
+      <form id="survey-form">
+        <label id="name-label">Name</label>
+        <input type="text" id="name" required="required" pattern="" placeholder="Enter Your Name">
+  
+        <label id="email-label">Email</label>
+        <input type="email" id="email" required="required" placeholder="Enter Your Email">
+  
+      
+      <label id="number-label">Number</label>
+      <input type="number" placeholder="Enter phone number"  min="8" max="14" required="required" id="number">
+      
+      
+      
+      <div id="country">
+        <h3>Select Country</h3>
+        <select name="country" id="dropdown">
+          <option value="afghanistan">Afghanistan</option>
+          <option value="akrotiri">Akrotiri</option>
+          <option value="argentina">Argentina</option>
+          <option value="belarus">Belarus</option>
+          <option value="belgium">Belgium</option>
+          <option value="brazil">Brazil</option>
+          <option value="cape-verde">Cape Verde</option>
+          <option value="Cayman-islands">Cayman Islands</option>
+          <option value="Chad">Chad</option>
+          <option value="central-african-republic">Central African Rebulic</option>
+          <option value="denmark">Denmark</option>
+          <option value="egypt">Egypt</option>
+          <option value="ghana">Ghana</option>
+          <option value="hong-kong">Hong Kong</option>
+          <option value="iceland">Iceland</option>
+          <option value="india">India</option>
+          <option value="kazakhstan">Kazakhstan</option>
+          <option value="kenya">Kenya</option>
+          <option value="mexico">Mexico</option>
+          <option value="netherlands">Netherlands</option>
+          <option value="niger">Niger</option>
+          <option value="nigeria">Nigeria</option>
+          <option value="pakistan">Pakistan</option>
+          <option value="singapore">Singapore</option>
+          <option value="somalia">Somalia</option>
+        </select>
+      </div>
+      
+      <div id="gender">
+        <h3>Please Select Gender</h3>
+        <div class="gender">
+          <label for="male">Male</label>
+          <input type="radio" name="gender" id="male" value="male">
+  
+        </div>
+  
+        <div class="gender">
+          <label for="female">Female</label>
+          <input type="radio" name="gender" id="female" value="female">
+          
+        </div>
+        <div class="gender">
+          <label for="other">Other</label>
+          <input type="radio" name="gender" id="other" value="other">
+          
+        </div>
+        <div class="gender">
+          <label for="rather-not-say">Rather Not Say</label>
+          <input type="radio" name="gender" id="rather-not-say" value="rather-not-say">
+        </div>
+      </div>
+  
+      <div id="hobbies">
+        <h3>Select your hobbbies?</h3>
+        <div class="hobby">
+          <label for="video-game">Video Game</label>
+          <input type="checkbox" value="video-game" id="video-game">
+        </div>
+        <div class="hobby">
+          <label for="reading">Reading</label>
+          <input type="checkbox" value="reading" id="reading">
+          
+        </div>
+        <div class="hobby">
+          <label for="music">Music</label>
+          <input type="checkbox" value="music" id="music">
+          
+        </div>
+        <div class="hobby">
+          <label for="singing">Singing</label>
+          <input type="checkbox" value="singing" id="singing">
+          
+        </div>
+        <div class="hobby">
+          <label for="movies">Movies</label>
+          <input type="checkbox" value="movies" id="movies"> 
+        </div>
+      </div>
+
+      <div id="textarea">
+        <label for="message">Message</label>
+        <textarea name="message" id="message" placeholder="Please enter feedback"></textarea>
+      </div>
+      
+  
+      <!-- <button id="sumbit">Sumbit</button> -->
+  
+      <button id="submit">Submit</button>
+    </form>
+
+    </div>
+  </div>
+
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>
